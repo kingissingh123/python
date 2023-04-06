@@ -1,0 +1,25 @@
+#GRADING SYSTEM
+#Result in GRADING SYSTEM 
+
+roll=int(input("Student's roll number:"))
+sum=0                   #ॐ  
+for i in range(1,6):
+    mark=int(input("enter marks:"))
+    sum=sum+mark
+print("Total marks:",sum)
+percent=(sum/500)*100
+if percent>=90:
+    print("O Grade")
+elif percent>=80:
+    print("E Grade")
+elif percent>=70:
+    print("A Grade")
+elif percent>=60:
+    print("B Grade")
+elif percent>=50:
+    print("C Grade")
+elif percent>=40:
+    print("D Grade")
+elif percent<40:
+    print("F Grade")
+    
