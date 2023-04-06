@@ -1,0 +1,12 @@
+#Program to add two numbers without using arithmetic operators
+
+x=int(input("Enter 1st number:"))
+y=int(input("Enter 2nd number:"))
+def add(x,y):
+    while y!=0:
+        carry=x&y
+        x=x^y
+        y=carry<<1
+    return x
+result=add(x,y)
+print("x+y=",result)
