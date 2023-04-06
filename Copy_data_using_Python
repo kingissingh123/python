@@ -1,0 +1,15 @@
+#Copy a piece of text from one file to another using python
+
+
+import shutil
+
+source=r'C:\Users\KIIT\Desktop\Hanuman_Jayanti.txt'   
+target=r'C:\Users\KIIT\Desktop\sample.txt'
+
+try:
+    shutil.copy(source,target)
+    print("COPIED SUCCESSFULLY")
+ 
+except:
+    print('Could not Copy file')
+    print('An error occured')
